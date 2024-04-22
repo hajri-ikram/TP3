@@ -1,0 +1,80 @@
+#import "@preview/charged-ieee:0.1.0": ieee
+#set page(footer: context [
+  *ISET BIZERTE*
+  #h(1fr)
+  #counter(page).display(
+    "1/1",
+    both: true,
+  )
+])
+#show: ieee.with(
+  title: [Lab #3: Web Application with Genie],
+  authors: (
+    (
+      name: "Hajri ikram",
+      department: [Dept. of EE (AII2)],
+      organization: [ISET Bizerte --- Tunisia],
+      user name: "hajri-ikram"
+    ),
+    (
+      name: "Chaabeee nada  ",
+      department: [Dept. of EE (AII2)],
+      organization: [ISET Bizerte --- Tunisia],
+      user name: ""
+    ),
+  ),
+  index-terms: ("Scientific writing", "Typesetting", "Document creation", "Syntax"),
+  bibliography: bibliography("refs.bib"),
+)
+
+
+=exercices
+ In the first task we add extra slide that modify the
+behaviour of the sine wave graph by adding  : *_Phase_ ranging between $-pi$ and $pi$, changes by a step of $pi/100$*
+- Then  we add the offset function : *Offset varies from $-0.5$ to $1$, by a step of $0.1$* 
+#figure(
+  image("app.jl.png",width: 100%),
+ caption: [
+    Adding the phase and offset functions 
+  ],
+)
+
+#figure(
+  image("html.png",width: 90%),
+ caption: [
+    Adding the phase and offset  functions
+  ],
+)
+
+#figure(
+  image("julia offset.png",width: 90%),
+ caption: [
+    Adding the offset function 
+  ],
+)
+
+#figure(
+   image("html offset.png", width: 90%),
+ caption: [
+    Adding the offset function 
+  ],
+)
+
+- After that  we open the Julia REPL in order to open the web app
+
+#figure(
+   image("terminal.png", width: 90%),
+ caption: [
+    Julia REPL
+  ],
+)
+-And, we have the sine wave, with the ability to adjust every parameter 
+
+#figure(
+  image("result.png",width: 90%),
+ caption: [
+    Result
+  ],
+)
+= Conclusion
+finally,Julia is a dynamic, high-level programming language that has gained significant traction in scientific and technical computing communities. 
